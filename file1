@@ -41,25 +41,42 @@ git reset --hard cid (to delete a cid)
 git clone https://github.com/polarapu/Batch-43.git
 ls
 cd Batch-43
+ls
 touch file1 file2
 git add .
 git commit -m "sample commit"
 git push
  
+git clone https://github.com/polarapu/Batch-43.git
+cd Batch-43
+touch prasad
+git status
+git add .
+git commit -m "label" prasad
+git push
+git pull 
+esc :wq!
+git push
 
+mkdir prasad-dir
+cd prasad-dir
+touch f1 f2 f3 f4
+cd ..
+git status
+git add .
+git commit -m "label"
+git push
 
+rm f3
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+git log
+git log -5
+git log --oneline
+git log --oneline -5
+git log --author=satish
+git log --author=shiva -2
+git log --author=shiva --oneline
+git log --author=shiva --oneline -3
+git log --since=2019-06-03
+git log --until=2019-06-04
+git log --since=2018-04-04 --until=2019-02-14
